@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Track Progress</title>
+  <link rel="stylesheet" href="progress.css">
+  <script src="script.js"></script>
+  <style>
+    a{
+      color: blanchedalmond;
+      align-content: center;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Track Progress</h1>
+
+    <a href="home.php"><i>Home</i></a>
+  </header>
+
+
+  <section id="progress-form-section">
+    <h2>Progress Tracking</h2>
+    <form id="progress-form">
+      <label for="weight-input">Weight:</label>
+      <input type="number" id="weight-input" placeholder="Enter weight in pounds">
+      <button type="submit" id="submit-progress">Save Progress</button>
+    </form>
+    <div id="progress-message"></div>
+  </section>
+
+  <section id="feedback-section">
+    <h2>Feedback</h2>
+    <textarea id="feedback-input" placeholder="Enter your feedback here"></textarea>
+    <button id="send-feedback">Send Feedback to Dietitian</button>
+  </section>
+
+  <script src="progress.js"></script>
+</body>
+</html>

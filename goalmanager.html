@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Goal Manager</title>
+  <link rel="stylesheet" href="goalmanager.css">
+  <script src="script.js"></script>
+  <style>
+    a{
+      color: blanchedalmond;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Goal Manager</h1> <br>
+    <a href="home.php"><i>Home</i></a>
+  </header>
+
+  <section id="goal-section">
+    <h2>Manage Your Goals</h2>
+    <form id="goal-form">
+      <label for="goal-input">Enter Your Goal:</label>
+      <input type="text" id="goal-input" placeholder="E.g., Lose 5 pounds">
+      <button type="submit">Add Goal</button>
+    </form>
+
+    <ul id="goal-list">
+      <!-- Goals will be displayed here -->
+    </ul>
+  </section>
+
+
+  <script>
+    var goalForm = document.getElementById("goal-form");
+    var goalInput = document.getElementById("goal-input");
+    var goalList = document.getElementById("goal-list");
+
+    goalForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      var goalText = goalInput.value.trim();
+
+      if (goalText !== "") {
+        var goalItem = document.createElement("li");
+        goalItem.textContent = goalText;
+        goalList.appendChild(goalItem);
+
+        goalInput.value = "";
+      }
+    });
+  </script>
+</body>
+</html>

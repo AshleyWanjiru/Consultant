@@ -1,0 +1,134 @@
+.wrapper{
+    position: relative;
+    padding-top:60px ;
+
+}
+.logo{
+    position: absolute;
+    top: -200px ;
+    left: -100px;
+    width:50px ;
+    height:50px ;
+}
+.logo img{
+    width: 1000%;
+    height: 1000%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("backimg.webp");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(252, 251, 251);
+    text-decoration: none;
+    font-size: 21px;
+    box-sizing: border-box;
+    border-radius: 23px;
+  }
+  
+  section.hero {
+   
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: black;
+    font-weight: 200;
+    font-style: italic;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    background-size: contain;
+    
+  }
+  
+  h1 {
+    color: #ee1b14;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  section.features {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  section.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    display: inline-block;
+    max-width: 250px;
+    margin: 0 20px;
+    text-align: left;
+  }
+  
+  .feature i {
+    font-size: 48px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  

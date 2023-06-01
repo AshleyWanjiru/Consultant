@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meal Planner</title>
+  <link rel="stylesheet" href="mealplanner.css">
+  <script src="script.js"></script>
+  <style>
+    a{
+      color: blanchedalmond;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Meal Planner</h1>
+    <a href="home.php"><i>Home</i></a>
+    <div class="dropdown">
+      <select id="week-dropdown" onchange="displayMeals()">
+        <option value="">Select Week</option>
+        <option value="week1">Week 1</option>
+        <option value="week2">Week 2</option>
+        <option value="week3">Week 3</option>
+        <option value="week4">Week 4</option>
+      </select>
+    </div>
+  </header>
+
+  <section id="meal-section">
+    <h2 id="selected-week"></h2>
+    <div id="meals-container"></div>
+  </section>
+
+
+  <script>
+    function displayMeals() {
+      var selectedWeek = document.getElementById("week-dropdown").value;
+      document.getElementById("selected-week").textContent = selectedWeek;
+
+      // Clear the meals container
+      document.getElementById("meals-container").innerHTML = "";
+
+      // Perform logic to display meals based on the selected week
+      // You can customize this logic according to your requirements
+      if (selectedWeek === "week1") {
+        displayMealsForWeek1();
+      } else if (selectedWeek === "week2") {
+        displayMealsForWeek2();
+      } else if (selectedWeek === "week3") {
+        displayMealsForWeek3();
+      } else if (selectedWeek === "week4") {
+        displayMealsForWeek4();
+      }
+    }
+
+    // Functions to display meals for each week
+    function displayMealsForWeek1 () {
+      var mealsContainer = document.getElementById("meals-container");
+
+      for (var day = 1; day <= 7; day++) {
+        var dayBox = document.createElement("div");
+        dayBox.classList.add("day-box");
+
+        var dayHeading = document.createElement("h3");
+        dayHeading.textContent = "Day " + day;
+        dayBox.appendChild(dayHeading);
+
+        var breakfastList = document.createElement("ul");
+        breakfastList.classList.add("meal-list");
+        breakfastList.innerHTML = "<li>Breakfast Meal " + day + "</li>";
+        dayBox.appendChild(breakfastList);
+
+        var lunchList = document.createElement("ul");
+        lunchList.classList.add("meal-list");
+        lunchList.innerHTML = "<li>Lunch Meal " + day + "</li>";
+        dayBox.appendChild(lunchList);
+
+        var supperList = document.createElement("ul");
+        supperList.classList.add("meal-list");
+        supperList.innerHTML = "<li>Supper Meal " + day + "</li>";
+        dayBox.appendChild(supperList);
+
+        mealsContainer.appendChild(dayBox);
+      }
+    }
+
+    function displayMealsForWeek2 () {
+      var mealsContainer = document.getElementById("meals-container");
+
+      for (var day = 1; day <= 7; day++) {
+        var dayBox = document.createElement("div");
+        dayBox.classList.add("day-box");
+
+        var dayHeading = document.createElement("h3");
+        dayHeading.textContent = "Day " + day;
+        dayBox.appendChild(dayHeading);
+
+        var breakfastList = document.createElement("ul");
+        breakfastList.classList.add("meal-list");
+        breakfastList.innerHTML = "<li>Breakfast Meal " + day + "</li>";
+        dayBox.appendChild(breakfastList);
+
+        var lunchList = document.createElement("ul");
+        lunchList.classList.add("meal-list");
+        lunchList.innerHTML = "<li>Lunch Meal " + day + "</li>";
+        dayBox.appendChild(lunchList);
+
+        var supperList = document.createElement("ul");
+        supperList.classList.add("meal-list");
+        supperList.innerHTML = "<li>Supper Meal " + day + "</li>";
+        dayBox.appendChild(supperList);
+
+        mealsContainer.appendChild(dayBox);
+      }
+    }
+
+    function displayMealsForWeek3 () {
+      var mealsContainer = document.getElementById("meals-container");
+
+      for (var day = 1; day <= 7; day++) {
+        var dayBox = document.createElement("div");
+        dayBox.classList.add("day-box");
+
+        var dayHeading = document.createElement("h3");
+        dayHeading.textContent = "Day " + day;
+        dayBox.appendChild(dayHeading);
+
+        var breakfastList = document.createElement("ul");
+        breakfastList.classList.add("meal-list");
+        breakfastList.innerHTML = "<li>Breakfast Meal " + day + "</li>";
+        dayBox.appendChild(breakfastList);
+
+        var lunchList = document.createElement("ul");
+        lunchList.classList.add("meal-list");
+        lunchList.innerHTML = "<li>Lunch Meal " + day + "</li>";
+        dayBox.appendChild(lunchList);
+
+        var supperList = document.createElement("ul");
+        supperList.classList.add("meal-list");
+        supperList.innerHTML = "<li>Supper Meal " + day + "</li>";
+        dayBox.appendChild(supperList);
+
+        mealsContainer.appendChild(dayBox);
+      }
+    }
+
+    function displayMealsForWeek4 () {
+      var mealsContainer = document.getElementById("meals-container");
+
+      for (var day = 1; day <= 7; day++) {
+        var dayBox = document.createElement("div");
+        dayBox.classList.add("day-box");
+
+        var dayHeading = document.createElement("h3");
+        dayHeading.textContent = "Day " + day;
+        dayBox.appendChild(dayHeading);
+
+        var breakfastList = document.createElement("ul");
+        breakfastList.classList.add("meal-list");
+        breakfastList.innerHTML = "<li>Breakfast Meal " + day + "</li>";
+        dayBox.appendChild(breakfastList);
+
+        var lunchList = document.createElement("ul");
+        lunchList.classList.add("meal-list");
+        lunchList.innerHTML = "<li>Lunch Meal " + day + "</li>";
+        dayBox.appendChild(lunchList);
+
+        var supperList = document.createElement("ul");
+        supperList.classList.add("meal-list");
+        supperList.innerHTML = "<li>Supper Meal " + day + "</li>";
+        dayBox.appendChild(supperList);
+
+        mealsContainer.appendChild(dayBox);
+      }
+    }
+
+
+  </script>
+</body>
+</html>
